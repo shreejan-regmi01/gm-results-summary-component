@@ -25,9 +25,13 @@ ul {
   /* Primary */
 
   --light-red: hsl(0, 100%, 67%);
+  --light-red-background: hsla(0, 100%, 67%, 0.06);
   --orangey-yellow: hsl(39, 100%, 56%);
+  --orangey-yellow-background: hsl(39, 100%, 56%, 0.06);
   --green-teal: hsl(166, 100%, 37%);
+  --green-teal-background: hsl(166, 100%, 37%, 0.06);
   --cobalt-blue: hsl(234, 85%, 45%);
+  --cobalt-blue-background: hsl(234, 85%, 45%, 0.06);
 
   /* Gradients */
 
@@ -96,4 +100,86 @@ body {
 
 .final-score p:nth-child(2) {
   color: var(--light-lavender);
+}
+
+/* Summary Section */
+.summary {
+  padding: 1.5rem;
+}
+
+.summary .title {
+  text-align: left;
+  color: var(--dark-gray);
+}
+
+ul.scores {
+  padding-left: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.reaction {
+  background-color: var(--light-red-background);
+}
+
+.reaction .score_type_name {
+  color: var(--light-red);
+}
+
+.memory {
+  background-color: var(--orangey-yellow-background);
+}
+
+.memory .score_type_name {
+  color: var(--orangey-yellow);
+}
+
+.verbal {
+  background-color: var(--green-teal-background);
+}
+
+.verbal .score_type_name {
+  color: var(--green-teal);
+}
+
+.visual {
+  background-color: var(--cobalt-blue-background);
+}
+
+.visual .score_type_name {
+  color: var(--cobalt-blue);
+}
+
+.score_type {
+  display: flex;
+  gap: 0.5rem;
+  /* align-items: center; */
+}
+
+.score__secured {
+  color: var(--dark-gray);
+}
+
+.score__total {
+  color: var(--light-lavender);
+}
+
+.btn {
+  border: none;
+  padding: 1em;
+  width: 100%;
+  font-weight: 700;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  border-radius: 2rem;
+  vertical-align: middle;
+  /* tex */
 }
