@@ -61,7 +61,7 @@ body {
 
 .result {
   background: linear-gradient(var(--background-one), var(--background-two));
-  padding: 1.5rem 3rem 2rem 3rem;
+  padding: 1.5rem 4rem 2rem 4rem;
   /* display: grid; */
   /* gap: 1rem; */
   border-radius: 0 0 2rem 2rem;
@@ -80,16 +80,22 @@ body {
 
 .description {
   color: var(--light-lavender);
+  font-size: 0.85rem;
 }
 
 .final-score {
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
   border-radius: 100%;
   /* min-width: 50%; */
-  width: 8.4rem;
-  padding: 1.1rem;
+  width: 9rem;
+  height: 9rem;
+  /* padding: 2rem; */
   margin: auto;
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .final-score p:first-child {
@@ -121,7 +127,7 @@ ul.scores {
 .score {
   display: flex;
   justify-content: space-between;
-  padding: 0.9rem;
+  padding: 0.7rem;
   align-items: center;
   border-radius: 0.5rem;
 }
@@ -186,4 +192,30 @@ ul.scores {
   border-radius: 2rem;
   vertical-align: middle;
   /* tex */
+}
+
+@media only screen and (min-width: 500px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 550px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .result {
+    border-radius: 2rem;
+    padding: 1.5rem 2.5rem 2rem 2.5rem;
+  }
+
+  ul.scores {
+    margin-bottom: 1.5rem;
+  }
 }
