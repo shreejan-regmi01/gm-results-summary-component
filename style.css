@@ -121,7 +121,7 @@ ul.scores {
 .score {
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem;
+  padding: 0.9rem;
   align-items: center;
   border-radius: 0.5rem;
 }
@@ -162,6 +162,10 @@ ul.scores {
   display: flex;
   gap: 0.5rem;
   /* align-items: center; */
+}
+
+.score_value {
+  align-self: flex-start;
 }
 
 .score__secured {
