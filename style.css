@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/* css reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  /* Primary */
+
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+
+  --background-one: hsl(252, 100%, 67%);
+  --background-two: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray: hsl(224, 30%, 27%);
+}
+
+/* Custom CSS */
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.content {
+  text-align: center;
+  font-weight: 500;
+}
+
+.result {
+  background: linear-gradient(var(--background-one), var(--background-two));
+  padding: 1.5rem 3rem 2rem 3rem;
+  /* display: grid; */
+  /* gap: 1rem; */
+  border-radius: 0 0 2rem 2rem;
+  justify-items: center;
+}
+
+.result .title {
+  color: var(--light-lavender);
+  margin-bottom: 1.5rem;
+}
+
+.verdict {
+  color: var(--pale-blue);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: var(--light-lavender);
+}
+
+.final-score {
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 100%;
+  /* min-width: 50%; */
+  width: 9rem;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.final-score p:first-child {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.final-score p:nth-child(2) {
+  color: var(--light-lavender);
+}
