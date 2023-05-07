@@ -47,6 +47,7 @@ ul {
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray: hsl(224, 30%, 27%);
+  --dark-gray-200: hsl(224, 30%, 60%);
 }
 
 /* Custom CSS */
@@ -179,7 +180,8 @@ ul.scores {
 }
 
 .score__total {
-  color: var(--light-lavender);
+  /* color: var(--light-lavender); */
+  color: var(--dark-gray-200);
 }
 
 .btn {
@@ -192,6 +194,11 @@ ul.scores {
   border-radius: 2rem;
   vertical-align: middle;
   /* tex */
+}
+
+.btn:hover {
+  background-color: var(--violet-blue);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 500px) {
